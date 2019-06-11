@@ -1,7 +1,22 @@
-h1, h2 {
-  color: #fc0000; }
-
 body {
-  color: #fc0000; }
+  background-color: #222831 !important;
+  font-family: "Roboto", sans-serif !important; }
+
+h1, h3, p, li {
+  color: #00adb5; }
+
+hr {
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background-color: #eeeeee; }
+
+.center-text {
+  text-align: center; }
+
+.center-div {
+  margin: 0 auto;
+  width: 50%;
+  text-align: justify; }
 
 /*# sourceMappingURL=styles.css.map */
