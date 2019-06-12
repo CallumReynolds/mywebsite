@@ -1,3 +1,4 @@
+/* Global Tags */
 body {
   background-color: #222831 !important;
   font-family: "Roboto", sans-serif !important; }
@@ -5,7 +6,8 @@ body {
 h1, h3, p, li {
   color: #00adb5; }
 
-hr {
+/* Global Classes */
+.hr-heading {
   width: 50%;
   border: 0;
   height: 1px;
@@ -19,4 +21,56 @@ hr {
   width: 50%;
   text-align: justify; }
 
+.align-inmiddle {
+  padding-top: 20%;
+  margin: 0 auto;
+  height: 50%;
+  vertical-align: middle;
+}
+.space {
+  padding: 1.5%;
+  line-height: 2;
+}
+
+/* Contact */
+
+
+/* About */
+
+
+/* Portfolio */
+.hr-folio {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #393e46;
+  border-width: 5px;
+  width: 20%;
+}
+
+/* Home */
+.big-heading {
+  font-weight: bolder;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0 0 4.5rem;
+  position: fixed;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
 /*# sourceMappingURL=styles.css.map */
