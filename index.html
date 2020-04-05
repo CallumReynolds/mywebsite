@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -6,6 +7,7 @@
 
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
 
     <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -13,46 +15,181 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <title>Callum's Website</title>
 </head>
 <body>
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+      <a class="navbar-brand active" href="index.html">CALLUM REYNOLDS</a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a class="navbar-brand active" href="index.html">CALLUM REYNOLDS</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-
-        </div>
+      </div>
     </nav>
 
-    <div class="center-text align-inmiddle animated fadein">
-        <h1 class="big-heading">CALLUM REYNOLDS</h1>
-        <a href="https://tafeqld.edu.au/courses/17928/diploma-of-software-development"><em>Software Developement Graduate</em></a> <br>           
+    <div id="fullpage">
+      <div class="section active" id="section1" data-anchor='firstPage'>
+        <div class="center-text align-inmiddle animated fadein">
+          <h1 class="big-heading">CALLUM REYNOLDS</h1>
+          <a href="https://tafeqld.edu.au/courses/17928/diploma-of-software-development"><em>Software Developement Graduate</em></a> <br>           
+        </div>
+      </div>
+      <div class="section" id="section2" data-anchor='secondPage'>
+        <div class="slide" data-anchor="slide1">
+          <div class="center-text animated fadein">
+            <div class="space">
+                <h1>My Work</h1> 
+            </div>
+            <hr class="hr-heading">
+    
+            <div class="space">
+                <p>I'm always thinking about and working on my own projects!</p>
+                <p>I don't have many projects to display at the moment, but in time I plan to build a more extensive portfolio!</p>
+          </div>
+        </div>
+        <div class="slide" data-anchor="slide2">
+          <div class="space">
+            <h3>Matching Pairs Game</h3>
+            <hr class="hr-folio">
+            <div class="center-div">
+                <p>
+                    During my mid semester TAFE break, I decided to partake in the <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">The Complete 2019 Web Development Bootcamp</a> 
+                    by Angela Yu on Udemy which I have since completed. While progressing through the course, my TAFE teachers sent out an email
+                    with an optional task to complete, which involved: refactoring an incomplete matching pair game in Java. Using my initiative I decided to develop my own Matching Pairs Game 
+                    using my newly acquired skills. I have the game source code on my <a href="https://github.com/CallumReynolds">github</a> and hosted on <a href="https://callumreynolds.github.io/MatchingPairs/">github pages</a>. 
+                </p>
+            </div>
+        </div>
+
+        <div class="space">
+            <h3>Simple Jekyll Page</h3>
+            <hr class="hr-folio">
+            <div class="center-div">
+                <p>
+                    I discovered Jekyll while looking at hosting websites. The idea of being able to host a website with data without
+                    requiring a database sounded like a niche way of developing a site. Using a Windows computer made it a little bit of a difficult
+                    process because Jekyll requires Ruby which isn't supported well on Windows. I was able to
+                    get the very basics of the Jekyll site up and running and can be previewed <a href="https://callumreynolds.github.io/">here</a>,
+                    with some recipes you may like!
+                </p>
+            </div>
+        </div> 
+        </div>
+        <div class="slide" data-anchor="slide3">
+          <div class="space">
+            <h3>TAFE Projects</h3>
+            <hr class="hr-folio">
+            <p>These are a sample of the applications that I have created for TAFE assessments:</p>
+            <div class="center-div">
+                <ul>
+                    <li>
+                        <strong>Tool Rental Web App</strong> - ASP.NET MVC web application which communicates with a RESTful API to 
+                        enable the tracking and rentals of tools. Features include systems to manage customers, tools and rentals(hiring and returning)
+                        tools. Also including reports and history of transactions which can be exported to a csv file. 
+                    </li> <br>
+                    <li>
+                        <strong>'Quick Quiz'</strong> - Java inter-processing communication system that delivers quiz questions via a classroom-based
+                            network to a group of students. Using a chat server which the teacher and students connect to, the teacher has a seperate form
+                            to the students. The teacher has a list of questions to choose from and send to the students. Once completed the students sends answers back
+                            for the teacher to review. Data is controlled using doubly linked lists and binary trees.
+                    </li> <br>
+                    <li> 
+                        <strong>'Xeno Onslaught'</strong> - a mobile game built using the LOVE 2d engine which can handle game states.
+                        A simple game which involves a player facing off an endless wave of aliens and tries to survive for as long as possible.
+                        Has settings to change game options and a scoreboard which keeps track of player scores.
+                    </li> <br>
+                </ul>
+            </div>
+        </div>   
+        </div>
+        <div class="slide" data-anchor="slide4">
+          <div class="space">
+            <h3>TAFE Projects</h3>
+            <hr class="hr-folio">
+            <div class="center-div">
+                <ul>
+                    <li>
+                        <strong>Tool Rental Windows App</strong> - very similar functionality to the Tool Rental Web App as they are
+                        both based off the same scenario. Created as a windows form application using SQLite and Dapper for data handling.
+                    </li> <br>
+                    <li>
+                        <strong>'Ian's Industrial Installation'</strong> - java form application with the main focus of handling 
+                        2d arrays. It worked by reading in CSV files with formatted data and displaying the corresponding data in 
+                        grid view. Different files could be read in and exported out as well.
+                    </li> <br>
+                    <li>
+                        <strong>'Birthday Tracker'</strong> - a simple java form application which tracks certain information About
+                        people such as birthday, likes and dislikes. Used simple data structures and had features for sorting and navigation.
+                    </li>
+                </ul>
+            </div>
+        </div>   
+        </div>              
+      </div>
+      </div>
+      <div class="section" id="section3" data-anchor='thirdPage'>
+        Some section
+      </div>
+      <div class="section" id="section4" data-anchor='fourthPage'>
+        Some section
+      </div>
+    </div>
+    
+    <ul id="menu">
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+      <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+      <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+    </ul>
+
+    <div id="fp-nav" class="fp-right" style="margin-top: -43.5px; display: block;">
+      <ul>
+        <li><a href="#firstPage" class=""><span class="fp-sr-only">fullPage</span><span></span></a><div class="fp-tooltip fp-right">fullPage</div></li>
+        <li><a href="#secondPage" class=""><span class="fp-sr-only">Open</span><span></span></a><div class="fp-tooltip fp-right">Open</div></li>
+        <li><a href="#thirdPage" class=""><span class="fp-sr-only">Easy</span><span></span></a><div class="fp-tooltip fp-right">Easy</div>
+        </li><li><a href="#fourthPage" class=""><span class="fp-sr-only">Touch</span><span></span></a><div class="fp-tooltip fp-right">Touch</div></li>
+      </ul>
     </div>
 
     <!-- Optional JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="assets\js\page.js" charset="utf-8"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+
+    <script type="text/javascript">
+      var fullpage = new fullpage('#fullpage', {
+          //options here
+          //Navigation
+          css3:true,
+          menu: '#menu',
+          navigation:true,
+          navigationTooltipes: ['Home','About','Resume','Contact'],
+          anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+          sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+          autoScrolling:true,
+          scrollHorizontally: true
+        });
+        //methods
+        // e.g. fullpage_api.setAllowScrolling(false);
+    </script>
+  </body>
 </html>
